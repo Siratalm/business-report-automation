@@ -8,7 +8,7 @@ An automated business reporting workflow built with **n8n** that sends real-time
 
 ## 📸 Workflow Preview
 
-![Workflow Preview](workflow-preview.png)
+![Workflow Preview](workflow-preview.png)(workflow-preview-executions.png)
 
 ---
 
