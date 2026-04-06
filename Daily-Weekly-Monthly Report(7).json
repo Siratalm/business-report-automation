@@ -1,0 +1,476 @@
+{
+  "name": "Daily-Weekly-Monthly Report",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "triggerAtHour": 23
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1024,
+        -64
+      ],
+      "id": "8fd5e5b9-9915-42f2-bdf0-adedb90fe48e",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE",
+          "mode": "list",
+          "cachedResultName": "business_automation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "shop_A",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit#gid=0"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -544,
+        -64
+      ],
+      "id": "887be716-8100-4c7c-9ab0-6d0ce5c02e08",
+      "name": "Read Shop A",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "C8LQIzGyTdA0PC9Q",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE",
+          "mode": "list",
+          "cachedResultName": "business_automation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 993942164,
+          "mode": "list",
+          "cachedResultName": "Shop_B",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit#gid=993942164"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -544,
+        128
+      ],
+      "id": "fd512794-ce1b-4d99-bbef-7181e6d08d5e",
+      "name": "Read Shop B",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "C8LQIzGyTdA0PC9Q",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE",
+          "mode": "list",
+          "cachedResultName": "business_automation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1229685023,
+          "mode": "list",
+          "cachedResultName": "Shop_C",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit#gid=1229685023"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -544,
+        320
+      ],
+      "id": "f39be69f-8bdd-4afd-afca-dc95207d4ece",
+      "name": "Read Shop C",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "C8LQIzGyTdA0PC9Q",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE",
+          "mode": "list",
+          "cachedResultName": "business_automation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1920104150,
+          "mode": "list",
+          "cachedResultName": "stock",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit#gid=1920104150"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -544,
+        -224
+      ],
+      "id": "2ebfa8d2-0531-4ab1-968c-1be31a24d92b",
+      "name": "Read Stock",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "C8LQIzGyTdA0PC9Q",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// ─── Inputs ────────────────────────────────────────────────────────────\nconst allItems = $input.first().json\n  ? [$input.first().json]\n  : $input.all().map(i => i.json);\nconst salesRows = allItems.filter(i => i.shop_id);\nconst stockRows = allItems.filter(i => i.current_stock !== undefined);\nconst debtRows  = allItems.filter(i => i.debtor_name);\n\n// ─── Detect report type ────────────────────────────────────────────────\nconst now        = new Date();\nconst today      = now.toISOString().split('T')[0];\nconst dayOfMonth = now.getDate();\nconst dayOfWeek  = now.getDay();\nconst type       = dayOfMonth === 1 ? 'monthly'\n                 : dayOfWeek  === 6 ? 'weekly'\n                 : 'daily';\n\n// ─── Helpers ───────────────────────────────────────────────────────────\nconst SHOPS  = ['shop_a', 'shop_b', 'shop_c'];\nconst LABELS = { shop_a: 'Shop A', shop_b: 'Shop B', shop_c: 'Shop C' };\nconst BUDGET = 1200000;\nconst fmt    = n => Number(n).toLocaleString('en-BD');\nconst SEP    = '────────────────────────';\n\nfunction shopStats(rows) {\n  const result = {};\n  for (const shop of SHOPS) {\n    const s = rows.filter(r => r.shop_id === shop);\n    result[shop] = {\n      rev:    s.reduce((t, r) => t + Number(r.total_sale),   0),\n      profit: s.reduce((t, r) => t + Number(r.total_profit), 0),\n      units:  s.reduce((t, r) => t + Number(r.qty_sold),     0),\n    };\n  }\n  return result;\n}\n\nfunction topProduct(rows) {\n  const map = {};\n  rows.forEach(r => {\n    map[r.product_name] = (map[r.product_name] || 0) + Number(r.qty_sold);\n  });\n  return Object.entries(map).sort((a, b) => b[1] - a[1])[0] || ['N/A', 0];\n}\n\nfunction stockLines(rows) {\n  if (!rows.length) return 'No stock data';\n  return rows.map(r => {\n    const ok = Number(r.current_stock) > Number(r.low_stock_alert);\n    return `${ok ? '✅' : '⚠️'} ${r.product_name} — ${r.current_stock} units`;\n  }).join('\\n');\n}\n\n// ─── Debt section ──────────────────────────────────────────────────────\nconst unpaid    = debtRows.filter(r => r.status !== 'paid');\nconst paidToday = debtRows.filter(r =>\n  (r.status === 'paid' || r.status === 'partial') && r.paid_date === today\n);\nconst dueToday  = unpaid.filter(r => r.due_date === today);\nconst overdue   = unpaid.filter(r => r.due_date < today);\n\nconst tomorrow    = new Date(now);\ntomorrow.setDate(tomorrow.getDate() + 1);\nconst tomorrowStr = tomorrow.toISOString().split('T')[0];\nconst dueTomorrow = unpaid.filter(r => r.due_date === tomorrowStr);\n\nlet debtMessage = '';\n\nif (paidToday.length || dueToday.length || overdue.length || dueTomorrow.length) {\n  const dateStr = now.toLocaleDateString('en-BD',\n    { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });\n  debtMessage = `💰 *Debt Alert*\\n_${dateStr}_\\n${SEP}\\n`;\n\n  if (paidToday.length) {\n    const collected = paidToday.reduce((t, r) => t + Number(r.amount_paid || r.amount_owed || 0), 0);\n    debtMessage += `\\n✅ *Paid Today — ৳ ${fmt(collected)}*\\n`;\n    debtMessage += paidToday.map(r => {\n      const paid = Number(r.amount_paid || r.amount_owed || 0);\n      const tag  = r.status === 'partial' ? ' _(partial)_' : ' _(settled)_';\n      return `• ${r.debtor_name} — ৳ ${fmt(paid)}${tag}`;\n    }).join('\\n') + '\\n';\n  }\n\n  if (dueToday.length) {\n    debtMessage += `\\n🔔 *Due Today*\\n`;\n    debtMessage += dueToday.map(r => {\n      const remaining = Number(r.amount_owed || 0) - Number(r.amount_paid || 0);\n      return `• ${r.debtor_name} — ৳ ${fmt(remaining)}`;\n    }).join('\\n') + '\\n';\n  }\n\n  if (overdue.length) {\n    debtMessage += `\\n🚨 *Overdue*\\n`;\n    debtMessage += overdue.map(r => {\n      const remaining = Number(r.amount_owed || 0) - Number(r.amount_paid || 0);\n      const daysLate  = Math.floor((new Date(today) - new Date(r.due_date)) / (1000*60*60*24));\n      return `• ${r.debtor_name} — ৳ ${fmt(remaining)} (${daysLate}d late)`;\n    }).join('\\n') + '\\n';\n  }\n\n  if (dueTomorrow.length) {\n    debtMessage += `\\n📅 *Due Tomorrow*\\n`;\n    debtMessage += dueTomorrow.map(r => {\n      const remaining = Number(r.amount_owed || 0) - Number(r.amount_paid || 0);\n      return `• ${r.debtor_name} — ৳ ${fmt(remaining)}`;\n    }).join('\\n') + '\\n';\n  }\n\n  const totalOwed = unpaid.reduce((t, r) =>\n    t + Number(r.amount_owed || 0) - Number(r.amount_paid || 0), 0);\n  debtMessage += `\\n${SEP}\\nTotal outstanding: ৳ ${fmt(totalOwed)}\\n_${unpaid.length} open debt(s)_`;\n}\n\n// ─── DAILY ─────────────────────────────────────────────────────────────\nlet reportMessage = '';\n\nif (type === 'daily') {\n  const rows        = salesRows.filter(r => r.date === today);\n  const stats       = shopStats(rows);\n  const totalRev    = SHOPS.reduce((t, s) => t + stats[s].rev,    0);\n  const totalProfit = SHOPS.reduce((t, s) => t + stats[s].profit, 0);\n  const totalUnits  = SHOPS.reduce((t, s) => t + stats[s].units,  0);\n  const dateStr     = now.toLocaleDateString('en-BD',\n    { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });\n\n  let shopLines = '';\n  for (const shop of SHOPS) {\n    const shopRows = rows.filter(r => r.shop_id === shop);\n    const top      = topProduct(shopRows);\n    shopLines += `*${LABELS[shop]}*\\n`\n      + `Total Sales: ৳ ${fmt(stats[shop].rev)}\\n`\n      + `Total Profit: ৳ ${fmt(stats[shop].profit)}\\n`\n      + `Top Product: ${top[0]} — ${top[1]} units\\n\\n`;\n  }\n\n  // Debt summary for daily report\n  const paidAmt = paidToday.reduce((t, r) => t + Number(r.amount_paid || r.amount_owed || 0), 0);\n  const totalOwed = unpaid.reduce((t, r) =>\n    t + Number(r.amount_owed || 0) - Number(r.amount_paid || 0), 0);\n  const debtSummary = `Collected Today: ৳ ${fmt(paidAmt)}${paidToday.length ? ` (${paidToday.length} payment${paidToday.length>1?'s':''})` : ''}\\n`\n    + `Total Outstanding: ৳ ${fmt(totalOwed)} | Open: ${unpaid.length}${overdue.length ? ` | Overdue: ${overdue.length} ⚠️` : ''}`;\n\n  reportMessage = `📊 *Daily Business Report*\\n_${dateStr}_\\n${SEP}\\n\\n`\n    + shopLines\n    + `*Combined Today*\\n`\n    + `Total Revenue: ৳ ${fmt(totalRev)}\\n`\n    + `Total Profit: ৳ ${fmt(totalProfit)}\\n`\n    + `Total Units Sold: ${totalUnits}\\n${SEP}\\n`\n    + `*Stock Alerts*\\n${stockLines(stockRows)}\\n${SEP}\\n`\n    + `*Debt Summary*\\n${debtSummary}\\n${SEP}\\n`\n    + `_— Auto Report_`;\n}\n\n// ─── WEEKLY ────────────────────────────────────────────────────────────\nelse if (type === 'weekly') {\n  const weekStart = new Date(now);\n  weekStart.setDate(now.getDate() - dayOfWeek);\n  weekStart.setHours(0, 0, 0, 0);\n  const weekStartStr = weekStart.toISOString().split('T')[0];\n\n  const rows        = salesRows.filter(r => r.date >= weekStartStr);\n  const stats       = shopStats(rows);\n  const totalRev    = SHOPS.reduce((t, s) => t + stats[s].rev,    0);\n  const totalProfit = SHOPS.reduce((t, s) => t + stats[s].profit, 0);\n  const margin      = totalRev > 0\n    ? ((totalProfit / totalRev) * 100).toFixed(1) : '0.0';\n\n  const byDay = {};\n  rows.forEach(r => { byDay[r.date] = (byDay[r.date] || 0) + Number(r.total_sale); });\n  const bestDay      = Object.entries(byDay).sort((a, b) => b[1] - a[1])[0] || [today, 0];\n  const bestDayLabel = new Date(bestDay[0])\n    .toLocaleDateString('en-BD', { weekday: 'long' });\n  const bestShop     = [...SHOPS].sort((a, b) => stats[b].rev - stats[a].rev)[0];\n  const top          = topProduct(rows);\n\n  const wStart = weekStart.toLocaleDateString('en-BD', { day: 'numeric', month: 'long' });\n  const wEnd   = now.toLocaleDateString('en-BD',\n    { day: 'numeric', month: 'long', year: 'numeric' });\n\n  const revLines    = SHOPS.map(s => `${LABELS[s]}: ৳ ${fmt(stats[s].rev)}`).join('\\n');\n  const profitLines = SHOPS.map(s => `${LABELS[s]}: ৳ ${fmt(stats[s].profit)}`).join('\\n');\n\n  // Weekly debt collected\n  const weekDebtRows = debtRows.filter(r => r.paid_date >= weekStartStr && r.paid_date <= today);\n  const weekCollected = weekDebtRows.reduce((t, r) => t + Number(r.amount_paid || r.amount_owed || 0), 0);\n  const totalOwed = unpaid.reduce((t, r) =>\n    t + Number(r.amount_owed || 0) - Number(r.amount_paid || 0), 0);\n\n  reportMessage = `📈 *Weekly Business Report*\\n_Week of ${wStart}–${wEnd}_\\n${SEP}\\n\\n`\n    + `*Revenue by Shop*\\n${revLines}\\n\\n`\n    + `*Profit by Shop*\\n${profitLines}\\n\\n${SEP}\\n`\n    + `*Combined This Week*\\n`\n    + `Total Revenue: ৳ ${fmt(totalRev)}\\n`\n    + `Total Profit: ৳ ${fmt(totalProfit)}\\n`\n    + `Profit Margin: ${margin}%\\n\\n`\n    + `Best Day: ${bestDayLabel} — ৳ ${fmt(bestDay[1])}\\n`\n    + `Best Shop: ${LABELS[bestShop]}\\n`\n    + `Top Product: ${top[0]} — ${top[1]} units\\n${SEP}\\n`\n    + `*Stock Levels*\\n${stockLines(stockRows)}\\n${SEP}\\n`\n    + `*Debt This Week*\\n`\n    + `Collected: ৳ ${fmt(weekCollected)}\\n`\n    + `Still Outstanding: ৳ ${fmt(totalOwed)} (${unpaid.length} open)\\n${SEP}\\n`\n    + `_— Auto Weekly Report_`;\n}\n\n// ─── MONTHLY ───────────────────────────────────────────────────────────\nelse {\n  const prevMonth  = new Date(now.getFullYear(), now.getMonth() - 1, 1);\n  const monthStart = prevMonth.toISOString().split('T')[0];\n  const monthEnd   = new Date(now.getFullYear(), now.getMonth(), 0)\n    .toISOString().split('T')[0];\n\n  const rows        = salesRows.filter(r => r.date >= monthStart && r.date <= monthEnd);\n  const stats       = shopStats(rows);\n  const totalRev    = SHOPS.reduce((t, s) => t + stats[s].rev,    0);\n  const totalProfit = SHOPS.reduce((t, s) => t + stats[s].profit, 0);\n  const totalUnits  = SHOPS.reduce((t, s) => t + stats[s].units,  0);\n  const margin      = totalRev > 0\n    ? ((totalProfit / totalRev) * 100).toFixed(1) : '0.0';\n  const vsTarget    = ((totalRev - BUDGET) / BUDGET * 100).toFixed(1);\n  const vsLine      = Number(vsTarget) >= 0\n    ? `+${vsTarget}% above target ✅` : `${vsTarget}% below target ⚠️`;\n\n  const monthLabel = prevMonth.toLocaleDateString('en-BD',\n    { month: 'long', year: 'numeric' });\n\n  const prodMap = {};\n  rows.forEach(r => {\n    prodMap[r.product_name] = (prodMap[r.product_name] || 0) + Number(r.qty_sold);\n  });\n  const top3 = Object.entries(prodMap)\n    .sort((a, b) => b[1] - a[1]).slice(0, 3)\n    .map(([n, q], i) => `${i + 1}. ${n} — ${q} units`)\n    .join('\\n');\n\n  const rankLines = [...SHOPS]\n    .sort((a, b) => stats[b].rev - stats[a].rev)\n    .map((s, i) => `${['1st','2nd','3rd'][i]}: ${LABELS[s]} — ৳ ${fmt(stats[s].rev)}`)\n    .join('\\n');\n\n  const revLines = SHOPS.map(s =>\n    `${LABELS[s]}: ৳ ${fmt(stats[s].rev)}`).join('\\n');\n\n  // Monthly debt summary\n  const monthDebtPaid = debtRows.filter(r =>\n    r.paid_date >= monthStart && r.paid_date <= monthEnd\n  );\n  const monthCollected = monthDebtPaid.reduce((t, r) =>\n    t + Number(r.amount_paid || r.amount_owed || 0), 0);\n  const totalOwed = unpaid.reduce((t, r) =>\n    t + Number(r.amount_owed || 0) - Number(r.amount_paid || 0), 0);\n\n  reportMessage = `🗓️ *Monthly Business Report*\\n_${monthLabel}_\\n${SEP}\\n\\n`\n    + `*Revenue by Shop*\\n${revLines}\\n\\n${SEP}\\n`\n    + `*Monthly Summary*\\n`\n    + `Total Revenue: ৳ ${fmt(totalRev)}\\n`\n    + `Monthly Target: ৳ ${fmt(BUDGET)}\\n`\n    + `vs Target: ${vsLine}\\n\\n`\n    + `Total Profit: ৳ ${fmt(totalProfit)}\\n`\n    + `Profit Margin: ${margin}%\\n`\n    + `Total Units Sold: ${totalUnits.toLocaleString()}\\n${SEP}\\n`\n    + `*Top 3 Products*\\n${top3}\\n${SEP}\\n`\n    + `*Shop Rankings*\\n${rankLines}\\n${SEP}\\n`\n    + `*Current Stock*\\n${stockLines(stockRows)}\\n${SEP}\\n`\n    + `*Debt Recovery This Month*\\n`\n    + `Collected: ৳ ${fmt(monthCollected)} (${monthDebtPaid.length} payment${monthDebtPaid.length!==1?'s':''})\\n`\n    + `Still Outstanding: ৳ ${fmt(totalOwed)}\\n`\n    + `Open Debts: ${unpaid.length}${overdue.length ? ` | Overdue: ${overdue.length} ⚠️` : ''}\\n${SEP}\\n`\n    + `_— Auto Monthly Report_`;\n}\n\n// ─── Return both messages ───────────────────────────────────────────────\nreturn [{ json: { reportMessage, debtMessage, reportType: type } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        400,
+        16
+      ],
+      "id": "7dab9baf-f6af-4763-8f40-05d318142c7a",
+      "name": "Calculate Report"
+    },
+    {
+      "parameters": {
+        "chatId": "1123787496",
+        "text": "={{ $json.reportMessage }}",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        640,
+        16
+      ],
+      "id": "d62e64f4-3cc5-4412-b059-a4043930497b",
+      "name": "Send Report to Owner",
+      "webhookId": "7be15e9f-faba-4578-a64b-6b2a8584161c",
+      "credentials": {
+        "telegramApi": {
+          "id": "rmJs7PzfqVN6jL0C",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const now = new Date();\n\nconst dayOfWeek  = now.getDay();\nconst dayOfMonth = now.getDate();\n\nconst isFirstOfMonth = dayOfMonth === 1;\nconst isSaturday     = dayOfWeek  === 6;  // ← changed from 1 (Mon) to 6 (Sat)\n\nconst reportType = isFirstOfMonth ? 'monthly'\n                 : isSaturday     ? 'weekly'\n                 : 'daily';\n\nreturn [{ json: { reportType, triggeredAt: now.toISOString() } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -880,
+        -64
+      ],
+      "id": "5e97334c-b4a4-415b-b241-e1fd0fb73be6",
+      "name": "Identifi Schedule"
+    },
+    {
+      "parameters": {
+        "numberInputs": 5
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -64,
+        -32
+      ],
+      "id": "c080a080-df69-4f3f-a4ac-75db113162c1",
+      "name": "Combine All Data"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE",
+          "mode": "list",
+          "cachedResultName": "business_automation",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1904800755,
+          "mode": "list",
+          "cachedResultName": "Debt",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1mn8x42q9zFhJn93dAqV1X-6_yqkhJr5mxI_rYbNztAE/edit#gid=1904800755"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -544,
+        -352
+      ],
+      "id": "4d150959-e7ee-4be0-8606-7fe6b413a0a2",
+      "name": "Debt",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "C8LQIzGyTdA0PC9Q",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "📊 Daily · Weekly · Monthly Business Report\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nVersion   : 1.0\nAuthor    : MD MUSTAKIM ALI (siratal)\nBuilt with: n8n + Google Sheets + Telegram\n📋 OVERVIEW\nAutomatically sends business performance reports to the\nowner every night at 11 PM. Covers sales, profit, stock\nlevels, and debt alerts across 3 shops. Detects report\ntype based on date — daily, weekly, or monthly.\n🔁 FLOW\nSchedule Trigger (every night 11 PM)\n  ↓\n  Identifi Schedule (detect report type)\n  ↓\n  ├── 📗 Read Shop A\n  ├── 📗 Read Shop B\n  ├── 📗 Read Shop C\n  ├── 📦 Read Stock\n  └── 💰 Read Debt\n        ↓\n  Combine All Data (Merge — 5 inputs)\n        ↓\n  Calculate Report (build messages)\n        ↓\n  ├── 📬 Telegram: reportMessage (always)\n  └── 📬 Telegram: debtMessage (if not empty)\n🗓️ REPORT TYPE LOGIC\nDay 1 of month  →  Monthly Report\nSaturday        →  Weekly Report\nAll other days  →  Daily Report\n🧮 DATA SEPARATION IN CALCULATE REPORT\nshop_id         →  Sales rows\ncurrent_stock   →  Stock rows\ndebtor_name     →  Debt rows\n📊 GOOGLE SHEETS TABS REQUIRED\nshop_A  | shop_B  | shop_C\ndate | product_name | qty_sold | unit_price\nunit_cost | total_sale | total_profit | shop_id\nstock\nproduct_name | current_stock | low_stock_alert\nunit_cost | last_updated\nDebt\ndebtor_name | shop_id | amount_owed | amount_paid\ndue_date | status | paid_date | notes\n\n⚙️ CREDENTIALS NEEDED\n- Google Sheets OAuth2\n- Telegram Bot API```",
+        "height": 976,
+        "width": 544
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        32,
+        -464
+      ],
+      "id": "7ed79269-a821-4206-8f2a-247cd3deb145",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "chatId": "1123787496",
+        "text": "={{ $json.debtMessage }}",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        672,
+        224
+      ],
+      "id": "29aca5c2-bd6d-4ccd-9aa2-7c898d8aca7d",
+      "name": "Send Debt Alert",
+      "webhookId": "5264f056-ab6b-4df8-a064-347267d60eb9",
+      "credentials": {
+        "telegramApi": {
+          "id": "rmJs7PzfqVN6jL0C",
+          "name": "Telegram account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "9ff2b1a7-3a1c-4b64-9198-503389a60eac",
+              "leftValue": "={{ $json.debtMessage }}",
+              "rightValue": "",
+              "operator": {
+                "type": "number",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        464,
+        240
+      ],
+      "id": "3a5a3591-799d-4e83-97ba-d58282258aa3",
+      "name": "If Debt Exist"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Identifi Schedule",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Shop C": {
+      "main": [
+        [
+          {
+            "node": "Combine All Data",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Read Shop B": {
+      "main": [
+        [
+          {
+            "node": "Combine All Data",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Read Shop A": {
+      "main": [
+        [
+          {
+            "node": "Combine All Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Stock": {
+      "main": [
+        [
+          {
+            "node": "Combine All Data",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Calculate Report": {
+      "main": [
+        [
+          {
+            "node": "Send Report to Owner",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "If Debt Exist",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Identifi Schedule": {
+      "main": [
+        [
+          {
+            "node": "Read Shop A",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Shop B",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Shop C",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Stock",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Debt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Combine All Data": {
+      "main": [
+        [
+          {
+            "node": "Calculate Report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Debt": {
+      "main": [
+        [
+          {
+            "node": "Combine All Data",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "If Debt Exist": {
+      "main": [
+        [
+          {
+            "node": "Send Debt Alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "dcf744ab-50e9-4b23-8ba8-d55db222c4f5",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "cfce33b80f5ae6a0d5303de4fff14814cfe277d74b396df27064e89ad54e7611"
+  },
+  "id": "qCqnYzv1o5PuWk5X",
+  "tags": []
+}
